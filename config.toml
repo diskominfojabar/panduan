@@ -1,4 +1,14 @@
-baseURL = 'https://example.org/'
+baseURL = "https://panduanjabar.netlify.com"
+
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = "hugo-book"
+
+[build]
+command = "npm run build"
+publish = "/build"
+base = "/"
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
